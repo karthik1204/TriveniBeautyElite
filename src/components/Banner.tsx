@@ -67,7 +67,7 @@ const comboOffers: ComboOffer[] = [
     icon: <Crown className="h-8 w-8 text-yellow-500" />,
     services: [
       "O3+ Bridal Facial",
-      "Hydra Facial (Ultra Premium)",
+      "Hair Treaments(Premuim)",
       "Full Body Wax",
       "Oil Massage (Premium)"
     ]

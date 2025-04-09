@@ -11,7 +11,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2" />
-                <span>+91 1234567890</span>
+                <span>+91 7013136480</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2" />
@@ -49,7 +49,7 @@ const Footer = () => {
               <a href="#" className="hover:text-pink-400 transition-colors">
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-pink-400 transition-colors">
+              <a href="https://www.instagram.com/y.triveni6?igsh=cW83NzNleGE0Y2Rv" target="_blank" className="hover:text-pink-400 transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
               <a href="#" className="hover:text-pink-400 transition-colors">

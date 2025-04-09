@@ -74,7 +74,7 @@ const Services = () => {
       services: [
         { name: "Black Henna (Scalp)", price: 350 },
         { name: "Red Henna (Staining)", price: 500 },
-        { name:"Root Touch Hair Coloring Basic",price:1500},
+        { name:"Root Touch Hair Coloring (Basic)",price: 1500},
       ]
     },
     {
@@ -118,7 +118,7 @@ const Services = () => {
     const whatsappMessage = encodeURIComponent(
       `Hello! I would like to book the following service:\n\n` +
       `Service: ${service.name}\n` +
-      `Price: ₹${service.price}\n\n` +
+      //`Price: ₹${service.price}\n\n` +
       `Please confirm the availability.`
     );
     window.open(`https://wa.me/16292570686?text=${whatsappMessage}`, '_blank');
