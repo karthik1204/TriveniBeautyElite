@@ -144,7 +144,7 @@ Error generating stack: `+i.message+`
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
- */const Fo=me("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]]),sd="/assets/triveni-logo-BAYmwVdq.png";var Mo={exports:{}},wr={};/**
+ */const Fo=me("X",[["path",{d:"M18 6 6 18",key:"1bl5f8"}],["path",{d:"m6 6 12 12",key:"d8bk6v"}]]),sd="/TriveniBeautyElite/assets/triveni-logo-BAYmwVdq.png";var Mo={exports:{}},wr={};/**
  * @license React
  * react-jsx-runtime.production.min.js
  *
