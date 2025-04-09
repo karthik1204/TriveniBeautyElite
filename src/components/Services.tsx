@@ -74,6 +74,7 @@ const Services = () => {
       services: [
         { name: "Black Henna (Scalp)", price: 350 },
         { name: "Red Henna (Staining)", price: 500 },
+        { name:"Root Touch Hair Coloring Basic",price:1500},
       ]
     },
     {
