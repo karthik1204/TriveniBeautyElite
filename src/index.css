@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .combo-card {
+    @apply transition-all duration-500 ease-in-out hover:transform hover:scale-105 hover:shadow-2xl;
+  }
+
+  .service-card {
+    @apply transition-all duration-300 ease-in-out hover:transform hover:scale-102 hover:shadow-lg;
+  }
+
+  .btn-primary {
+    @apply inline-block bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold 
+           transition-all duration-300 ease-in-out relative overflow-hidden
+           hover:transform hover:translate-y-[-2px] hover:shadow-lg
+           before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full
+           before:bg-gradient-to-r before:from-pink-500 before:to-purple-500
+           before:opacity-0 before:transition-opacity before:duration-300
+           hover:before:opacity-100;
+  }
+
+  .nav-link {
+    @apply text-gray-700 hover:text-pink-600 transition-colors relative
+           after:content-[''] after:absolute after:bottom-[-2px] after:left-0 
+           after:w-0 after:h-[2px] after:bg-pink-600 after:transition-all
+           hover:after:w-full;
+  }
+
+  .combo-image-container {
+    @apply relative overflow-hidden;
+  }
+
+  .combo-image-container::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity duration-300;
+  }
+
+  .combo-image-container:hover::after {
+    @apply opacity-100;
+  }
+
+  .combo-image-container:hover .combo-image {
+    transform: scale(1.1) translateY(-5px);
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes rotateIn {
+    from {
+      opacity: 0;
+      transform: rotate(-180deg) scale(0.3);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0) scale(1);
+    }
+  }
+
+  @keyframes modalSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .slide-in {
+    animation: slideIn 0.8s ease-out forwards;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  .rotate-in {
+    animation: rotateIn 0.8s ease-out forwards;
+  }
+
+  .animate-modal-slide-up {
+    animation: modalSlideUp 0.5s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  .fade-in-delay-1 {
+    animation: fadeIn 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  .fade-in-delay-2 {
+    animation: fadeIn 0.6s ease-out 0.4s forwards;
+    opacity: 0;
+  }
+
+  .shimmer {
+    @apply relative overflow-hidden;
+  }
+
+  .shimmer::after {
+    content: '';
+    @apply absolute inset-0 transform translate-x-[-100%];
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+    animation: shimmer 2s infinite;
+  }
+
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+
+  .service-icon {
+    @apply text-pink-500 transition-all duration-300;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .service-card:hover .service-icon {
+    @apply text-purple-500 scale-110;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent;
+    background-size: 200% 100%;
+    animation: gradient-shift 3s linear infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
