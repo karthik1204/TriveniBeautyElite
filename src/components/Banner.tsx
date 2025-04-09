@@ -67,7 +67,7 @@ const comboOffers: ComboOffer[] = [
     icon: <Crown className="h-8 w-8 text-yellow-500" />,
     services: [
       "O3+ Bridal Facial",
-      "Hair Treaments(Premuim)",
+      "Hair Treatments(Premuim)",
       "Full Body Wax",
       "Oil Massage (Premium)"
     ]
@@ -79,7 +79,7 @@ const Banner = () => {
     const message = encodeURIComponent(
       `Hello! I would like to book the following package:\n\n` +
       `Package: ${offer.name}\n` +
-      `Price: ₹${offer.price}\n` +
+      //`Price: ₹${offer.price}\n` +
       `Services Included:\n${offer.services.map(service => `- ${service}`).join('\n')}\n\n` +
       `Please confirm the availability and schedule an appointment.`
     );
