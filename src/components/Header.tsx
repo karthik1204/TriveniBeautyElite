@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/triveni-logo-BAYmwVdq';  // Correct import path
+import logo from '../assets/triveni-logo.png';  // Correct import path
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
